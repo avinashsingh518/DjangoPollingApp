@@ -1,0 +1,56 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup page</title>
+<style>
+ header{
+  font-size: 300%;
+ }
+ *{
+  color: red;
+    text-align: center;
+  }
+  body {
+    background-color: lightblue;
+  }
+</style>
+</head>
+<body>
+<header>WELCOME TO POLL APP</header>
+<h1>SIGNUP/REGISTRATION FORM</h1>
+<hr>
+
+<form action="" method="post">
+  {% csrf_token %}
+  
+  <input type="text" name="txtfname" placeholder="Enter First Name" required=""/>
+  <br>
+  <br>
+  <input type="text" name="txtlname" placeholder="Enter Last Name" required=""/>
+  <br>
+  <br>
+  <input type="text" name="txtuser" placeholder="Enter Username" required=""/>
+  <br>
+  <br>
+  <input type="email" name="txtemail" placeholder="Enter Email" required=""/>
+  <br>
+  <br>
+  <input type="number" name="txtmobile" placeholder="Enter Mobile No." required=""/>
+  <br>
+  <br>
+  <input type="password" name="txtpass" placeholder="Enter Password" required=""/>
+  <br>
+  <br>
+  <input type="submit" name="btnsubmit" value="Register"/>
+
+</form>
+{{msg}}
+    <br>
+
+<a href="{% url 'login' %} " ><button type="button "  >login</button></a>
+
+
+
+</body>
+</html>
