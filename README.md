@@ -1,5 +1,5 @@
 # DjangoPollingApp
-## With the help of Python, Django,Django Sessions and DRF we create the Django Poll Questioning app, where user can register and login to see the question to vote and to see voting percentage of each option.
+## With the help of Python, Django,Django Sessions, DRF, HTML and some CSS we create the Django Poll Questioning app, where user can register and login to see the question to vote and to see voting percentage of each option.
 ## User can also see their user detail in UserProfile. 
 ## Only registered Users can view the questions and can vote. 
 ## Customizations in Django-Admin Panel. 
