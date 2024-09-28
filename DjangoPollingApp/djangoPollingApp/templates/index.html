@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3><strong>WELCOME TO HOME PAGE OF POLL APP</strong></h3>
+{% if user.is_authenticated %}
+<a href=" /logout "><button type="button "  >logout</button></a>
+<a href="{% url 'wel' %}"><button type="submit">User Profile</button></a>
+{% endif %}
+<br><br><br>
+<hr>
+
+<h3><strong>Django Polls Application</strong></h3>
+
+
+
+<div class="list-group">
+    {% for question in questions %}
+    <a href=" {% url 'vote' question.id %} " class="list-group-item list-group-item-action">
+        <h5>{{question.question}}</h5></a>
+   {% endfor %}
+    
+</div>
+
+{% endblock %}
